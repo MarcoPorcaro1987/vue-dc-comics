@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 // Reset
 *{
     box-sizing: border-box;
@@ -9,6 +11,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
 
+// Common
+
 body{
     font-family: 'PT Sans Narrow', sans-serif;
 }
+
+.container {
+    max-width: $containerSize;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
