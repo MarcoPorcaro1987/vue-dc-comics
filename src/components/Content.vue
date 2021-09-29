@@ -13,11 +13,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .contents-cont{
-    background-color: black;
-    h2 {
-      color: white;
-      padding: 2.5rem;
-    }
+.contents-cont {
+  background-color: black;
+  h2 {
+    color: white;
+    padding: 2.5rem 0;
   }
+}
 </style>
