@@ -5,7 +5,7 @@
       <Content />
       <Icons />
     </main>
-    <Footer></Footer>
+    <Footer />
   </div>
 </template>
 
