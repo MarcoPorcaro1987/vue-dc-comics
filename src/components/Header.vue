@@ -81,7 +81,8 @@ export default {
 .head-cont {
   display: flex;
   justify-content: space-between;
-  padding: 1.25rem;
+  height: 5.5rem;
+  padding-top: 0.625rem;
   align-items: center;
   .head-left {
     img {
@@ -98,7 +99,7 @@ export default {
           font-size: 0.75rem;
           font-weight: 700;
           display: inline-block;
-          padding: 1.25rem 0;
+          padding: 1.875rem 0;
           &.active {
             color: $mainColor;
             border-bottom: 0.25rem solid $mainColor;

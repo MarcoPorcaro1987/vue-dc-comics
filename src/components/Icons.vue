@@ -2,11 +2,8 @@
   <div class="icons">
     <div class="container icons-cont">
       <div class="icon" v-for="(icon, index) in icons" :key="index">
-        <img
-          src="@/assets/img/buy-comics-digital-comics.png"
-          alt="icons.label"
-        />
-        <span>PROVA</span>
+        <img :src="require(`@/assets/img/${icon.img}`)" alt="icon.label" />
+        <span>{{icon.label}}</span>
       </div>
     </div>
   </div>
@@ -19,23 +16,23 @@ export default {
     return {
       icons: [
         {
-          img: "@/assets/img/buy-comics-digital-comics.png",
+          img: "buy-comics-digital-comics.png",
           label: "DIGITAL COMICS",
         },
         {
-          img: "@/assets/img/buy-comics-merchandise.png",
+          img: "buy-comics-merchandise.png",
           label: "DC MERCHANDISE",
         },
         {
-          img: "@/assets/img/buy-comics-subscriptions.png",
+          img: "buy-comics-subscriptions.png",
           label: "SUBSCRIPTION",
         },
         {
-          img: "@/assets/img/buy-comics-shop-locator.png",
+          img: "buy-comics-shop-locator.png",
           label: "COMIC SHOP LOCATOR",
         },
         {
-          img: "@/assets/img/buy-dc-power-visa.png",
+          img: "buy-dc-power-visa.svg",
           label: "DC POWER VISA",
         },
       ],
