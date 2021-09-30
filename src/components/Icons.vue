@@ -2,8 +2,8 @@
   <div class="icons">
     <div class="container icons-cont">
       <div class="icon" v-for="(icon, index) in icons" :key="index">
-        <img :src="require(`@/assets/img/${icon.img}`)" alt="icon.label" />
-        <span>{{icon.label}}</span>
+        <img :src="require(`@/assets/img/${icon.img}`)" :alt="icon.label" />
+        <span>{{ icon.label }}</span>
       </div>
     </div>
   </div>
