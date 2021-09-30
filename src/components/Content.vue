@@ -1,9 +1,12 @@
 <template>
   <div class="contents-cont">
-    <div class="jumbo-cont"></div>
+    <div class="jumbo-cont">
+      <div class="btn-current-series">CURRENT SERIES</div>
+    </div>
     <div class="bg-cont">
       <div class="container books-cont">
-        <Book v-for="(book, index) in books" :key="index" :bk="book"/>
+        <Book v-for="(book, index) in books" :key="index" :bk="book" />
+        <div class="btn-load-more">LOAD MORE</div>
       </div>
     </div>
   </div>
@@ -110,18 +113,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/style/variables.scss";
 .jumbo-cont {
   background-image: url(../assets/img/jumbotron.jpg);
   height: 25rem;
   background-size: cover;
+  position: relative;
+  .btn-current-series {
+    background-color: $mainColor;
+    padding: .625rem;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    bottom: -1.275rem;
+    left: 17%;
+  }
 }
 .bg-cont {
   background-color: black;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 .books-cont {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
+  .btn-load-more{
+    margin-top: 2.25rem;
+    font-size: 0.875rem;
+    background-color: $mainColor;
+    padding: 0.5rem 2.875rem;
+    color: white;
+  }
 }
 </style>
