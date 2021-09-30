@@ -3,18 +3,19 @@
     <div class="jumbo-cont"></div>
     <div class="bg-cont">
       <div class="container books-cont">
-        <div class="book" v-for="(book, index) in books" :key="index">
-          <img :src="book.thumb" :alt="book.series" />
-          <p>{{ book.series }}</p>
-        </div>
+        <Book v-for="(book, index) in books" :key="index" :bk="book"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Book from "@/components/Book.vue";
 export default {
   name: "Content",
+  components: {
+    Book,
+  },
   data() {
     return {
       books: [
@@ -122,21 +123,5 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  .book {
-    width: calc(100% / 6 - 2rem);
-    height: 7.308125rem;
-    margin-bottom: 1.875rem;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-  }
-  p {
-    color: white;
-    font-size: 0.875rem;
-    margin-top: 0.625rem;
-  }
 }
 </style>
