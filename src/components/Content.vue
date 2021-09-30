@@ -121,7 +121,7 @@ export default {
   position: relative;
   .btn-current-series {
     background-color: $mainColor;
-    padding: .625rem;
+    padding: 0.625rem;
     color: white;
     display: inline-block;
     position: absolute;
@@ -138,7 +138,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  .btn-load-more{
+  .btn-load-more {
     margin-top: 2.25rem;
     font-size: 0.875rem;
     background-color: $mainColor;
