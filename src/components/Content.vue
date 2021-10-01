@@ -1,8 +1,9 @@
 <template>
   <div class="contents-cont">
-    <div class="jumbo-cont">
-      <div class="btn-current-series">CURRENT SERIES</div>
-    </div>
+    <Jumbo
+      :bgImage="require('../assets/img/jumbotron.jpg')"
+      btn="CURRENT SERIES"
+    />
     <div class="bg-cont">
       <div class="container books-cont">
         <Book v-for="(book, index) in books" :key="index" :bk="book" />
@@ -14,10 +15,13 @@
 
 <script>
 import Book from "@/components/Book.vue";
+import Jumbo from "@/components/Jumbo.vue";
+
 export default {
   name: "Content",
   components: {
     Book,
+    Jumbo,
   },
   data() {
     return {
@@ -114,21 +118,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/style/variables.scss";
-.jumbo-cont {
-  background-image: url(../assets/img/jumbotron.jpg);
-  height: 25rem;
-  background-size: cover;
-  position: relative;
-  .btn-current-series {
-    background-color: $mainColor;
-    padding: 0.625rem;
-    color: white;
-    display: inline-block;
-    position: absolute;
-    bottom: -1.275rem;
-    left: 17%;
-  }
-}
+
 .bg-cont {
   background-color: black;
   padding: 3rem 0;
