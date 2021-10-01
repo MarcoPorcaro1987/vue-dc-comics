@@ -113,7 +113,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/style/variables.scss";
+@import "../assets/style/variables.scss";
 .jumbo-cont {
   background-image: url(../assets/img/jumbotron.jpg);
   height: 25rem;

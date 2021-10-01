@@ -45,7 +45,7 @@
           <div class="social" v-for="(social, index) in socials" :key="index">
             <a href="social.url"
               ><img
-                :src="require(`@/assets/img/${social.src}`)"
+                :src="require(`../assets/img/${social.src}`)"
                 :alt="social.text"
             /></a>
           </div>
@@ -139,10 +139,6 @@ export default {
           url: "#",
         },
         {
-          text: "GAMES",
-          url: "#",
-        },
-        {
           text: "Contact Us",
           url: "#",
         },
@@ -202,7 +198,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/style/variables.scss";
+@import "../assets/style/variables.scss";
 .foot-top {
   background-image: url("../assets/img/footer-bg.jpg");
   height: 21rem;
@@ -245,7 +241,7 @@ export default {
   .btn-sign-up {
     color: white;
     padding: 0.3125rem 0.625rem;
-    border: 2px solid $mainColor;
+    border: 0.125rem solid $mainColor;
   }
   p {
     color: $mainColor;

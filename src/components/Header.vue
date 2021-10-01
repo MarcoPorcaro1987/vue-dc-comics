@@ -2,7 +2,7 @@
   <header class="container head-cont">
     <div class="head-left">
       <div class="logo-cont">
-        <img src="@/assets/img/dc-logo.png" alt="Logo DC" />
+        <img src="../assets/img/dc-logo.png" alt="Logo DC" />
       </div>
     </div>
     <div class="head-right">
@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/style/variables.scss";
+@import "../assets/style/variables.scss";
 .head-cont {
   display: flex;
   justify-content: space-between;
