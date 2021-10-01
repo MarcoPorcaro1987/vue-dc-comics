@@ -6,7 +6,7 @@
     />
     <div class="bg-cont">
       <div class="container books-cont">
-        <Book v-for="(book, index) in books" :key="index" :bk="book" />
+        <Comics v-for="(book, index) in books" :key="index" :bk="book" />
         <div class="btn-load-more">LOAD MORE</div>
       </div>
     </div>
@@ -14,13 +14,13 @@
 </template>
 
 <script>
-import Book from "@/components/Book.vue";
-import Jumbo from "@/components/Jumbo.vue";
+import Comics from "../components/Comics.vue";
+import Jumbo from "../components/Jumbo.vue";
 
 export default {
   name: "Content",
   components: {
-    Book,
+    Comics,
     Jumbo,
   },
   data() {
